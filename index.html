@@ -1,0 +1,375 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Eduport</title>  
+    <link rel="stylesheet" href=""> 
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> 
+</head> 
+<style>
+    body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    
+}  
+
+header {  
+    
+    padding: 10px;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+
+nav ul {  
+    display: flex;  
+    list-style: none;  
+}  
+
+nav li {  
+    margin: 0 15px;  
+    cursor: pointer;  
+}  
+
+.stats {  
+    margin-top: 30px;
+        display: flex; /* Use flexbox for layout */  
+        gap: 150px; /* Add space between images */  
+    }  
+    .limg {  
+        flex: 0 0 auto; /* Prevent images from stretching */  
+    }   
+
+h2 {  
+    text-align: center;  
+    margin-top: 20px;  
+}  
+
+.course-category {  
+    padding: 20px;  
+    background-color: white;  
+    margin: 20px;  
+    border-radius: 8px;  
+}  
+
+.courses {  
+   
+}  
+
+.course {  
+    background-color: #e9ecef;  
+    border-radius: 5px;  
+    margin: 10px;  
+    padding: 20px;  
+    width: 30%;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+footer {  
+    background-color: #0077cc;  
+    color: white;  
+     
+    padding: 10px;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
+.ctab{
+    background-color: rgba(102, 200, 253, 0.518);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;/* Optional: adds space between the images */  
+} 
+</style> 
+<body class="container-fluid">  
+    <header>  
+        <div class="logo">
+            <img width="250px" height="120px" src="./public/images/Screenshot 2025-03-24 162604.png" alt="">
+        </div>  
+        <div>
+            <nav>  
+                <ul>  
+                    <li>Category
+                        <span  class="bi bi-chevron-down"></span>
+                    </li>  
+                    <li>Demos
+                        <span  class="bi bi-chevron-down"></span>
+                    </li>  
+                    <li>Pages
+                        <span  class="bi bi-chevron-down"></span>
+                    </li>  
+                    <li>Accounts
+                        <span  class="bi bi-chevron-down"></span>
+                    </li>  
+                    <li>Management
+                        <span  class="bi bi-chevron-down"></span>
+                    </li>  
+                    
+                </ul>  
+            </nav>  
+
+        </div>
+        <div>
+            <div class="search-bar">  
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">  
+                <span class="bi bi-search search-icon"></span>  
+                <span class="bi bi-person-circle"></span>  
+            </div>  
+
+        </div>
+    </header>  
+
+    <main>  
+        <section class="stats">  
+           
+
+                <div class="limg"><img width="200px" src="./public/images/l1 (1).png" alt="" ></div>  
+                <div class="limg"><img width="200px" src="./public/images/l1 (2).png" alt=""></div>  
+                <div class="limg"><img width="200px" src="./public/images/l1 (3).png" alt=""></div>  
+                <div class="limg"><img width="200px" src="./public/images/l1 (4).png" alt=""></div>  
+                
+           
+        </section>  
+        <div>
+            <h2>Most Popular Courses</h2> 
+            <p class="d-flex justify-content-center">Choose from hundreds of courses from specialist organizations</p>
+        </div>
+        <div class="ctab course-category d-flex justify-content-center border border-1 ">
+            <div>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Development</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-disabled="true">Marketing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-disabled="true">Finance</a>
+                    </li>
+                  </ul>
+            </div>
+
+        </div> 
+       
+            
+            <div class="courses"> 
+                <div class="d-flex">
+
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (1).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (2).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (3).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (4).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                </div>
+                <div class="d-flex">
+
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (5).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (6).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (7).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                    <div class="container mt-5">  
+                        <div class="card" style="width: 18rem;">  
+                            <div class="card-body">  
+                                <div class="text-center mb-3">  
+                                    <img width="290px" src="./public/images/c1 (8).png" alt="Sketch logo" class="img-fluid">  
+                                </div>  
+                                <h5 class="card-title">Sketch from A to Z: for app designer</h5>  
+                                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>  
+                                <div class="d-flex justify-content-between align-items-center">  
+                                    <span class="badge badge-pill badge-warning">All level</span>  
+                                    <span class="rating">  
+                                        ⭐⭐⭐⭐☆ 4.0/5.0  
+                                    </span>  
+                                </div>  
+                                <p class="mt-2"><span style="color: red;" class="bi bi-clock"></span><small>12h 56m &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span style="color: red;" class="bi bi-calendar"></span> 15 lectures</small></p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                </div>
+            </div>
+        
+        <!-- Repeat for other categories like Development, Graphic Design etc. -->  
+    </main>  
+
+    <footer class="bg-light text-dark pt-4 mt-2">  
+        <div class="container">  
+            <div class="row">
+                <div class="col-md-4">
+                    <img width="200px" src="./public/images/Screenshot 2025-03-24 162604.png" alt="">
+                    <p>Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>  
+                </div>  
+                <div class="col-md-4">  
+                    <h5 class="fs-4 fw-bolder">Company</h5>  
+                   
+                    <ul class="list-unstyled">  
+                        <li><a href="#" class="text-dark">About us</a></li>  
+                        <li><a href="#" class="text-dark">Contact us</a></li>  
+                        <li><a href="#" class="text-dark">News and Blogs</a></li>  
+                        <li><a href="#" class="text-dark">Library</a></li>  
+                        <li><a href="#" class="text-dark">Career</a></li>  
+                    </ul>  
+                </div>  
+                <div class="col-md-4">  
+                    <h5 class="fs-4 fw-bolder">Community</h5>  
+                    <ul class="list-unstyled">  
+                        <li><a href="#" class="text-dark">Documentation</a></li>  
+                        <li><a href="#" class="text-dark">FAQ</a></li>  
+                        <li><a href="#" class="text-dark">Forum</a></li>  
+                        <li><a href="#" class="text-dark">Sitemap</a></li>  
+                    </ul>  
+                </div>  
+                <div class="col-md-4">  
+                    <h5 class="fs-4 fw-bolder">Teaching</h5>  
+                    <ul class="list-unstyled">  
+                        <li><a href="#" class="text-dark">Become a teacher</a></li>  
+                        <li><a href="#" class="text-dark">How to guide</a></li>  
+                        <li><a href="#" class="text-dark">Terms & Conditions</a></li>  
+                    </ul>  
+                </div>  
+            </div>  
+            <div class="row mt-4">  
+                <div class="">  
+                    <h5 class="fs-4 fw-bolder">Contact</h5>  
+                    <p>Toll free: +1234 568 963 (9 AM to 8 PM IST)</p>  
+                    <p>Email: <a href="mailto:example@gmail.com" class="text-dark">example@gmail.com</a></p>  
+                </div>  
+              
+            </div>  
+        </div>  
+        <div class="text-center py-3 bg-dark text-light">  
+            &copy; 2025 Eduport. All Rights Reserved.  
+        </div>  
+    </footer>  
+
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>  
+</html>  
