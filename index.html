@@ -44,6 +44,18 @@
         color: #6c757d;
     }
 
+    /* Updated nav item styling */
+    .nav-item {
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+    }
+
+    .nav-item .bi-chevron-down {
+        margin-left: 5px;
+        font-size: 0.8rem;
+    }
+
     .stats {  
         margin-top: 30px;
         display: flex;
@@ -96,7 +108,7 @@
         justify-content: center;
     }
 
-    .nav-item {
+    .category-nav .nav-item {
         margin: 5px;
     }
 
@@ -127,6 +139,7 @@
 
         nav li {
             margin: 5px 0;
+            justify-content: center;
         }
 
         .header-right {
@@ -172,19 +185,24 @@
                 <div class="col-md-6 col-12">
                     <nav class="d-none d-md-block">  
                         <ul class="d-flex justify-content-center list-unstyled mb-0">  
-                            <li class="mx-3">Category
+                            <li class="nav-item">
+                                <span>Category</span>
                                 <span class="bi bi-chevron-down"></span>
                             </li>  
-                            <li class="mx-3">Demos
+                            <li class="nav-item">
+                                <span>Demos</span>
                                 <span class="bi bi-chevron-down"></span>
                             </li>  
-                            <li class="mx-3">Pages
+                            <li class="nav-item">
+                                <span>Pages</span>
                                 <span class="bi bi-chevron-down"></span>
                             </li>  
-                            <li class="mx-3">Accounts
+                            <li class="nav-item">
+                                <span>Accounts</span>
                                 <span class="bi bi-chevron-down"></span>
                             </li>  
-                            <li class="mx-3">Management
+                            <li class="nav-item">
+                                <span>Management</span>
                                 <span class="bi bi-chevron-down"></span>
                             </li>  
                         </ul>  
@@ -195,11 +213,26 @@
                         </button>
                         <div class="collapse mt-2" id="mobileMenu">
                             <ul class="list-unstyled">
-                                <li class="py-1">Category <i class="bi bi-chevron-down"></i></li>
-                                <li class="py-1">Demos <i class="bi bi-chevron-down"></i></li>
-                                <li class="py-1">Pages <i class="bi bi-chevron-down"></i></li>
-                                <li class="py-1">Accounts <i class="bi bi-chevron-down"></i></li>
-                                <li class="py-1">Management <i class="bi bi-chevron-down"></i></li>
+                                <li class="py-1 d-flex align-items-center justify-content-center">
+                                    <span>Category</span>
+                                    <span class="bi bi-chevron-down ms-1"></span>
+                                </li>
+                                <li class="py-1 d-flex align-items-center justify-content-center">
+                                    <span>Demos</span>
+                                    <span class="bi bi-chevron-down ms-1"></span>
+                                </li>
+                                <li class="py-1 d-flex align-items-center justify-content-center">
+                                    <span>Pages</span>
+                                    <span class="bi bi-chevron-down ms-1"></span>
+                                </li>
+                                <li class="py-1 d-flex align-items-center justify-content-center">
+                                    <span>Accounts</span>
+                                    <span class="bi bi-chevron-down ms-1"></span>
+                                </li>
+                                <li class="py-1 d-flex align-items-center justify-content-center">
+                                    <span>Management</span>
+                                    <span class="bi bi-chevron-down ms-1"></span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -231,25 +264,41 @@
         </div>
 
         <div class="ctab course-category border rounded p-3 mb-5">
-            <ul class="nav nav-pills justify-content-center">
+            <ul class="nav nav-pills justify-content-center category-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+                    <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                        Web Design
+                        <span class="bi bi-chevron-down ms-1"></span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Graphic Design</a>
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        Graphic Design
+                        <span class="bi bi-chevron-down ms-1"></span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Development</a>
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        Development
+                        <span class="bi bi-chevron-down ms-1"></span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Marketing</a>
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        Marketing
+                        <span class="bi bi-chevron-down ms-1"></span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Finance</a>
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        Finance
+                        <span class="bi bi-chevron-down ms-1"></span>
+                    </a>
                 </li>
             </ul>
         </div> 
        
+        
         <div class="courses-container">
             <div class="row courses-row">
                 <!-- Course 1 -->
@@ -272,7 +321,7 @@
                     </div>
                 </div>
 
-                <!-- Course 2 -->
+                
                 <div class="col-lg-3 col-md-6 course-col">
                     <div class="card course-card">
                         <div class="card-body">  
@@ -292,7 +341,7 @@
                     </div>
                 </div>
 
-                <!-- Course 3 -->
+            
                 <div class="col-lg-3 col-md-6 course-col">
                     <div class="card course-card">
                         <div class="card-body">  
@@ -312,7 +361,7 @@
                     </div>
                 </div>
 
-                <!-- Course 4 -->
+            
                 <div class="col-lg-3 col-md-6 course-col">
                     <div class="card course-card">
                         <div class="card-body">  
@@ -332,7 +381,8 @@
                     </div>
                 </div>
 
-                <!-- Course 5 -->
+
+
                 <div class="col-lg-3 col-md-6 course-col">
                     <div class="card course-card">
                         <div class="card-body">  
@@ -352,7 +402,7 @@
                     </div>
                 </div>
 
-                <!-- Course 6 -->
+
                 <div class="col-lg-3 col-md-6 course-col">
                     <div class="card course-card">
                         <div class="card-body">  
@@ -372,7 +422,7 @@
                     </div>
                 </div>
 
-                <!-- Course 7 -->
+
                 <div class="col-lg-3 col-md-6 course-col">
                     <div class="card course-card">
                         <div class="card-body">  
@@ -392,7 +442,7 @@
                     </div>
                 </div>
 
-                <!-- Course 8 -->
+                
                 <div class="col-lg-3 col-md-6 course-col">
                     <div class="card course-card">
                         <div class="card-body">  
